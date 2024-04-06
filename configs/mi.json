@@ -1,6 +1,7 @@
 {
     "experiment_name": "neo125_github_experiment",
     "base_model": "EleutherAI/gpt-neo-125m",
+    "dataset_key": "the_pile",
     "dataset_member": "the_pile",
     "dataset_nonmember": "the_pile",
     "min_words": 100,
@@ -8,9 +9,8 @@
     "max_tokens": 512,
     "max_data": 100000,
     "output_name": "unified_mia",
-    "specific_source": "Github_ngram_13_<0.8_truncated",
     "n_samples": 1000,
-    "blackbox_attacks": ["loss", "ref", "min_k", "zlib", "ne"],
+    "blackbox_attacks": ["loss", "ref", "zlib", "ne", "min_k", "min_k++"],
     "ref_config": {
         "models": [
             "stabilityai/stablelm-base-alpha-3b-v2"
@@ -33,5 +33,6 @@
         "device_aux": "cuda:0"
     },
     "dump_cache": false,
-    "load_from_hf": true
+    "load_from_cache": true,
+    "load_from_hf": false
 }
