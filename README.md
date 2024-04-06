@@ -23,7 +23,7 @@ cache
 ```
 
 ### Run Experiments
-Simply run the `experiments_mink++_paper.sh`, which will evaluates all baselines (Loss, Ref, Zlib, Neighbor, Min-K%) and our proposed Min-K%++ on 7 subdomains of the MIMIR benchmark (Wikipedia, Github, Pile CC, PubMed Central, ArXiv, DM Mathematics, HackerNews) and over 5 Pythia models (160M, 1.4B, 2.8B, 6.9B, 12B). Note that Neighbor attack requires significant extra time, and we didn't actually run it for Pythia-12B.
+Simply run the `experiments_mink++_paper.sh`, which will evaluates all baselines (Loss, Ref, Zlib, Neighbor, Min-K%) and our proposed Min-K%++ on 7 subdomains of the MIMIR benchmark (Wikipedia, Github, Pile CC, PubMed Central, ArXiv, DM Mathematics, HackerNews) and over 5 Pythia models (160M, 1.4B, 2.8B, 6.9B, 12B). Note that Neighbor attack requires significant extra time, and we didn't actually run it for Pythia-12B. You may want to do the same by modifying `experiments_mink++_paper.sh` accordingly.
 
 ## Citation
 
