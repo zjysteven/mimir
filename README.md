@@ -30,17 +30,17 @@ Simply run the `experiments_mink++_paper.sh`, which will evaluates all baselines
 If you find this repo useful, please consider citing our paper and the original MIMIR paper:
 
 ```bibtex
-@article{zhang2024mink++,
-    title={Min-K%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models},
-    author={Zhang, Jingyang and Sun, Jingwei and Yeats, Eric and Yang, Ouyang and Kuo, Martin and Zhang, Jianyi and Yang, Hao and Li, Hai},
-    journal={arXiv preprint arXiv:2404.02936},
-    year={2024}
+@article{zhang2024min,
+  title={Min-K\%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models},
+  author={Zhang, Jingyang and Sun, Jingwei and Yeats, Eric and Ouyang, Yang and Kuo, Martin and Zhang, Jianyi and Yang, Hao and Li, Hai},
+  journal={arXiv preprint arXiv:2404.02936},
+  year={2024}
 }
 
 @article{duan2024membership,
-    title={Do Membership Inference Attacks Work on Large Language Models?}, 
-    author={Michael Duan and Anshuman Suri and Niloofar Mireshghallah and Sewon Min and Weijia Shi and Luke Zettlemoyer and Yulia Tsvetkov and Yejin Choi and David Evans and Hannaneh Hajishirzi},
-    year={2024},
-    journal={arXiv:2402.07841},
+  title={Do Membership Inference Attacks Work on Large Language Models?}, 
+  author={Michael Duan and Anshuman Suri and Niloofar Mireshghallah and Sewon Min and Weijia Shi and Luke Zettlemoyer and Yulia Tsvetkov and Yejin Choi and David Evans and Hannaneh Hajishirzi},
+  year={2024},
+  journal={arXiv:2402.07841},
 }
 ```
