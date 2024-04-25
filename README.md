@@ -5,10 +5,10 @@
 This repo is a fork of the [MIMIR](https://github.com/iamgroot42/mimir) benchmark that we use to run exeperiments in our paper [Min-K%++: Improved Baseline for Detecting Pre-Training Data from Large Language Models](https://arxiv.org/abs/2404.02936).
 
 ❓ ***What's different from the original MIMIR code repo?***
-1. At the time we ran experiments, directly following the instructions of MIMIR repo didn't work for us. We had to make some minor tweaks to make it work. We have included those changes and the exact instruction & script to reproduce the experiments in this repo. For setup, please still follow the original MIMIR repo [here](https://github.com/iamgroot42/mimir#instructions).
+1. At the time we ran experiments, directly following the instructions of MIMIR repo didn't work for us. We had to make some minor tweaks to make it work. We have included those changes and the exact instruction & script to reproduce the experiments in this repo. For environment setup, please still follow the original MIMIR repo [here](https://github.com/iamgroot42/mimir#instructions).
 2. To compare upper bounds between Min-K%++ and Min-K%, in this repo we sweep over different values of k (e.g. 10, 20, ..., 100) and report the best performance for each method. In MIMIR currently a fixed default value (k=20) will be used.
 
-💡 For a more **lightweight** implementation (less modular but easier for quick experiments), please refer to our [Min-K%++ repo](https://github.com/zjysteven/mink-plus-plus) which is based on the [WikiMIA benckmark](github.com/swj0419/detect-pretrain-code).
+💡 For a more **lightweight** implementation (less modular but easier for quick experiments), please refer to our [Min-K%++ repo](https://github.com/zjysteven/mink-plus-plus) which is based on the [WikiMIA benchmark](github.com/swj0419/detect-pretrain-code).
 
 ## Instructions
 ### Data
@@ -23,7 +23,7 @@ cache
 ```
 
 ### Run Experiments
-Simply run the `experiments_mink++_paper.sh`, which will evaluates all baselines (Loss, Ref, Zlib, Neighbor, Min-K%) and our proposed Min-K%++ on 7 subdomains of the MIMIR benchmark (Wikipedia, Github, Pile CC, PubMed Central, ArXiv, DM Mathematics, HackerNews) and over 5 Pythia models (160M, 1.4B, 2.8B, 6.9B, 12B). Note that Neighbor attack requires significant extra time, and we didn't actually run it for Pythia-12B. You may want to do the same by modifying `experiments_mink++_paper.sh` accordingly.
+Simply run the `experiments_mink++_paper.sh`, which will evaluate all baselines (Loss, Ref, Zlib, Neighbor, Min-K%) and our proposed Min-K%++ on 7 subdomains of the MIMIR benchmark (Wikipedia, Github, Pile CC, PubMed Central, ArXiv, DM Mathematics, HackerNews) and over 5 Pythia models (160M, 1.4B, 2.8B, 6.9B, 12B). Note that Neighbor attack requires significantly long time, and we didn't actually run it for Pythia-12B (following the practice of MIMIR). You may want to do the same by modifying `experiments_mink++_paper.sh` accordingly.
 
 ## Citation
 
